@@ -1,0 +1,89 @@
+{
+  "name": "My first workflow",
+  "nodes": [
+    {
+      "parameters": {
+        "content": "## For all the shortcuts\n**Double click** to edit me. [Guide](https://docs.n8n.io/workflows/components/sticky-notes/)",
+        "height": 128,
+        "width": 176
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -80,
+        -352
+      ],
+      "typeVersion": 1,
+      "id": "f8ea8e8b-b216-4d91-8950-d3659102d0af",
+      "name": "Sticky Note"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -160,
+        -112
+      ],
+      "id": "9fd1be5c-254c-430b-ac3b-793ee4feabb9",
+      "name": "‘My manual trigger'"
+    },
+    {
+      "parameters": {
+        "sendTo": "anuj96apay@gmail.com",
+        "subject": "Hi from my first work flow",
+        "emailType": "text",
+        "message": "Hi from n8n",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.2,
+      "position": [
+        48,
+        -112
+      ],
+      "id": "c8da92f9-26b7-4d87-b395-895c3e12d89b",
+      "name": "send an email",
+      "webhookId": "120af22c-8602-4496-9d9b-9ab3b714578a",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "LQjAir5sqbpZHq8g",
+          "name": "Gmail account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "‘My manual trigger'": {
+      "main": [
+        [
+          {
+            "node": "send an email",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": false
+  },
+  "versionId": "7acff7a1-5cd3-4141-86f0-5adb4486ef26",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "14a4f91b010619e01122b4703ae3bb354e2870d07b18b551c8b16030dce1df15"
+  },
+  "id": "9pq6SkfKpGhsenmF",
+  "tags": [
+    {
+      "name": "learn n8n",
+      "id": "ylosNIji6QA90mXB",
+      "updatedAt": "2026-02-13T11:43:18.874Z",
+      "createdAt": "2026-02-13T11:43:18.874Z"
+    }
+  ]
+}
