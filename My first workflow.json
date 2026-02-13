@@ -1,0 +1,41 @@
+{
+  "name": "My first workflow",
+  "nodes": [
+    {
+      "parameters": {
+        "content": "## For all the shortcuts\n**Double click** to edit me. [Guide](https://docs.n8n.io/workflows/components/sticky-notes/)",
+        "height": 128,
+        "width": 176
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -64,
+        -112
+      ],
+      "typeVersion": 1,
+      "id": "f8ea8e8b-b216-4d91-8950-d3659102d0af",
+      "name": "Sticky Note"
+    }
+  ],
+  "pinData": {},
+  "connections": {},
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": false
+  },
+  "versionId": "776bed25-1db7-413a-b8c1-f9486f979081",
+  "meta": {
+    "instanceId": "14a4f91b010619e01122b4703ae3bb354e2870d07b18b551c8b16030dce1df15"
+  },
+  "id": "9pq6SkfKpGhsenmF",
+  "tags": [
+    {
+      "name": "learn n8n",
+      "id": "ylosNIji6QA90mXB",
+      "updatedAt": "2026-02-13T11:43:18.874Z",
+      "createdAt": "2026-02-13T11:43:18.874Z"
+    }
+  ]
+}
